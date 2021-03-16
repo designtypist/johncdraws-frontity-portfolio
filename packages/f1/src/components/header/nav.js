@@ -46,7 +46,8 @@ const NavItem = styled.div`
   padding: 0;
   margin: 0 16px;
   color: var(--brand);
-  font-size: 0.9em;
+  font-size: 1em;
+  font-weight: bold;
   box-sizing: border-box;
   flex-shrink: 0;
 
@@ -55,6 +56,7 @@ const NavItem = styled.div`
     line-height: 2em;
     color:var(--black);
     transition: all 0.3s ease;
+    text-transform: lowercase;
     /* Use for semantic approach to style the current link */
     &[aria-current="page"] {
       color:var(--brand);

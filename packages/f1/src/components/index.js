@@ -133,8 +133,6 @@ const HeadContainer = styled.div`
   padding-bottom:6.25rem;
 `;
 const FooterContainer = styled.div`
-  width:100%;
-  background:var(--brand);
   // margin-top: auto;
 `;
 
