@@ -1,5 +1,5 @@
 const settings = {
-  "name": "johncdraws-awsm-project",
+  "name": "johncdraws-frontity-portfolio",
   "state": {
     "frontity": {
       "url": "https://johncdraws.com",
@@ -13,23 +13,16 @@ const settings = {
       "state": {
         "theme": {
           "menu": [
-            [
-              "Portfolio",
-              "/portfolio/"
-            ],
-            [
-              "Personal",
-              "/personal/"
-            ],
-            [
-              "About",
-              "/about/"
-            ]
+            ["Portfolio", "/portfolio/"],
+            ["Personal", "/personal/"],
+            ["About", "/"]
           ],
           "featured": {
-            "showOnList": false,
-            "showOnPost": false
-          }
+            "showOnList": true,
+            "showOnPost": true
+          },
+          // Whether to auto-fetch links on a page. Values can be "no" | "all" | "in-view" | "hover"
+          autoPrefetch: "hover"
         }
       }
     },
@@ -37,7 +30,8 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://admin.johncdraws.com"
+          "api": "https://admin.johncdraws.com/wp-json",
+          "homepage": "/about/",
         }
       }
     },

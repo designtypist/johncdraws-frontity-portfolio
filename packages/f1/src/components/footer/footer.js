@@ -20,7 +20,6 @@ const Footer = ({ state }) => {
                 <a href="mailto:johnchunart@gmail.com" target="_blank"> johnchunart@gmail.com</a>.
               </p>
             </div>
-            <div className="col-12 col-lg-3 footer-widget widget-two"></div>
             <div className="col-12 col-lg-3 footer-widget widget-two">
               <h6 className="widget-title">Connect</h6>
               <ul className="widget-list">
