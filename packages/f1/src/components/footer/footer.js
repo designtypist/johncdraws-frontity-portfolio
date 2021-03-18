@@ -30,8 +30,8 @@ const Footer = ({ state }) => {
         </MainFooter>
         
         <FooterCredits className="row">
-          <p className="col-6 text-left">&copy; Copyright 2021. All rights reserved.</p>
-          <p className="col-6 text-right">Designed and developed by
+          <p className="col-12 col-lg-6 footer-widget widget-two text-left">&copy; Copyright 2021. All rights reserved.</p>
+          <p className="col-12 col-lg-6 footer-widget widget-two text-right">Designed and developed by
             <a href="https://designtypist.com/" target="_blank"> DesignTypist</a>
           </p>
         </FooterCredits>
@@ -46,10 +46,12 @@ export default connect(Footer);
 
 const MainFooter = styled.div`
   width: 100%;
-  color:var(--white);
-  background:var(--brand);
-  margin: 0 auto;
-  padding: 4rem;
+  color: var(--white);
+  background: var(--brand);
+  padding: 4em;
+  .row {
+    margin: 0;
+  }
   a {
     font-weight: bold;
     color: var(--white);
@@ -58,8 +60,11 @@ const MainFooter = styled.div`
 
 const FooterCredits = styled.div`
   width: 100%;
-  margin: 0 auto;
-  padding: 1.5rem 4rem;
+  padding: 2em 4em;
+  color: 
+  .row {
+    margin: 0;
+  }
   p {
     font-size: 0.9rem;
   }
