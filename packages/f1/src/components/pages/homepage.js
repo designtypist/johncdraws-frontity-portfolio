@@ -36,8 +36,9 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
-width: 100%;
+width: 80%;
 position:relative;
+margin-bottom: 4em;
 .wp-block-group__inner-container {
   width: 100%;
   max-width: 1200px;
