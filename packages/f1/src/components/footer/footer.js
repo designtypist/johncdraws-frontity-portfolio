@@ -17,7 +17,7 @@ const Footer = ({ state }) => {
               <h6 className="widget-title">About Me</h6>
               <p>Hi, my name is John Chung. I'm an animator and illustrator based in Ontario. I love storytelling and bringing things to life through my art work.</p>
               <p>Feel free to contact me at 
-                <a href="mailto:johnchunart@gmail.com" target="_blank"> johnchunart@gmail.com</a>.
+                <a href="mailto:johnchungart@gmail.com" target="_blank"> johnchungart@gmail.com</a>.
               </p>
             </div>
             <div className="col-12 col-lg-3 footer-widget widget-two">
@@ -29,11 +29,13 @@ const Footer = ({ state }) => {
           </div>
         </MainFooter>
         
-        <FooterCredits className="row">
-          <p className="col-6 text-left">&copy; Copyright 2021. All rights reserved.</p>
-          <p className="col-6 text-right">Designed and developed by
-            <a href="https://designtypist.com/" target="_blank"> DesignTypist</a>
-          </p>
+        <FooterCredits>
+          <div className="row footer-widget">
+            <p className="col-12 col-lg-6 text-center text-lg-left">&copy; Copyright 2021. All rights reserved.</p>
+            <p className="col-12 col-lg-6 text-center text-lg-right">Designed and developed by
+              <a href="https://designtypist.com/" target="_blank"> DesignTypist</a>
+            </p>
+          </div>
         </FooterCredits>
 
       </Container>
@@ -46,10 +48,15 @@ export default connect(Footer);
 
 const MainFooter = styled.div`
   width: 100%;
-  color:var(--white);
-  background:var(--brand);
-  margin: 0 auto;
-  padding: 4rem;
+  color: var(--white);
+  background: var(--brand);
+  .row {
+    margin: 0;
+  }
+  .footer-widget {
+    margin: 0;
+    padding: 4em;
+  }
   a {
     font-weight: bold;
     color: var(--white);
@@ -58,10 +65,17 @@ const MainFooter = styled.div`
 
 const FooterCredits = styled.div`
   width: 100%;
-  margin: 0 auto;
-  padding: 1.5rem 4rem;
+  .row {
+    margin: 0;
+  }
+  .footer-widget {
+    margin: 0;
+    padding: 2em 4em;
+  }
   p {
     font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
   }
   a {
     font-weight: bold;
