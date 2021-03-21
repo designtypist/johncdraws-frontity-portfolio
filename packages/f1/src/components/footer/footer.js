@@ -31,8 +31,8 @@ const Footer = ({ state }) => {
         
         <FooterCredits>
           <div className="row footer-widget">
-            <p className="col-12 col-lg-6 text-left">&copy; Copyright 2021. All rights reserved.</p>
-            <p className="col-12 col-lg-6 text-right">Designed and developed by
+            <p className="col-12 col-lg-6 text-center text-lg-left">&copy; Copyright 2021. All rights reserved.</p>
+            <p className="col-12 col-lg-6 text-center text-lg-right">Designed and developed by
               <a href="https://designtypist.com/" target="_blank"> DesignTypist</a>
             </p>
           </div>
