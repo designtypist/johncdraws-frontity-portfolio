@@ -29,11 +29,13 @@ const Footer = ({ state }) => {
           </div>
         </MainFooter>
         
-        <FooterCredits className="row">
-          <p className="col footer-widget widget-two text-left">&copy; Copyright 2021. All rights reserved.</p>
-          <p className="col footer-widget widget-two text-right">Designed and developed by
-            <a href="https://designtypist.com/" target="_blank"> DesignTypist</a>
-          </p>
+        <FooterCredits>
+          <div className="row footer-widget">
+            <p className="col-12 col-lg-6 text-left">&copy; Copyright 2021. All rights reserved.</p>
+            <p className="col-12 col-lg-6 text-right">Designed and developed by
+              <a href="https://designtypist.com/" target="_blank"> DesignTypist</a>
+            </p>
+          </div>
         </FooterCredits>
 
       </Container>
@@ -48,9 +50,12 @@ const MainFooter = styled.div`
   width: 100%;
   color: var(--white);
   background: var(--brand);
-  padding: 4em;
   .row {
     margin: 0;
+  }
+  .footer-widget {
+    margin: 0;
+    padding: 4em;
   }
   a {
     font-weight: bold;
@@ -60,13 +65,17 @@ const MainFooter = styled.div`
 
 const FooterCredits = styled.div`
   width: 100%;
-  padding: 2em 4em;
-  color: 
   .row {
     margin: 0;
   }
+  .footer-widget {
+    margin: 0;
+    padding: 2em 4em;
+  }
   p {
     font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
   }
   a {
     font-weight: bold;
