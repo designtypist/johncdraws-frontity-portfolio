@@ -17,7 +17,7 @@ const Footer = ({ state }) => {
               <h6 className="widget-title">About Me</h6>
               <p>Hi, my name is John Chung. I'm an animator and illustrator based in Ontario. I love storytelling and bringing things to life through my art work.</p>
               <p>Feel free to contact me at 
-                <a href="mailto:johnchunart@gmail.com" target="_blank"> johnchunart@gmail.com</a>.
+                <a href="mailto:johnchungart@gmail.com" target="_blank"> johnchungart@gmail.com</a>.
               </p>
             </div>
             <div className="col-12 col-lg-3 footer-widget widget-two">
@@ -30,8 +30,8 @@ const Footer = ({ state }) => {
         </MainFooter>
         
         <FooterCredits className="row">
-          <p className="col-12 col-lg-6 footer-widget widget-two text-left">&copy; Copyright 2021. All rights reserved.</p>
-          <p className="col-12 col-lg-6 footer-widget widget-two text-right">Designed and developed by
+          <p className="col footer-widget widget-two text-left">&copy; Copyright 2021. All rights reserved.</p>
+          <p className="col footer-widget widget-two text-right">Designed and developed by
             <a href="https://designtypist.com/" target="_blank"> DesignTypist</a>
           </p>
         </FooterCredits>
