@@ -21,7 +21,7 @@ const Page = ({ state, actions, libraries }) => {
     actions.source.fetch("/");
     List.preload();
   }, []);
-
+  
   // Load the post, but only if the data is ready.
   return data.isReady ? (
     <ArticleContainer>
@@ -56,7 +56,7 @@ const Title = styled.h1`
  * selectors to style that HTML.
  */
 const Content = styled.div`
-  word-break: break-word;  
+  word-break: break-word;
   
   * {
     max-width: 1035px;
@@ -74,7 +74,7 @@ const Content = styled.div`
 
   img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
   }
 

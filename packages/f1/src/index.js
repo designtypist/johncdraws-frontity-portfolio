@@ -2,6 +2,7 @@ import Theme from "./components";
 import image from "@frontity/html2react/processors/image";
 import iframe from "@frontity/html2react/processors/iframe";
 import links from "./processor/links";
+import imageGallery from "./processor/image-gallery";
 
 const awsminF1 = {
   name: "@awsmin/f1",
@@ -46,7 +47,7 @@ const awsminF1 = {
        * Add a processor to `html2react` so it processes the `<img>` tags
        * inside the content HTML. You can add your own processors too
        */
-      processors: [image, iframe, links],
+      processors: [image, iframe, links, imageGallery]
     },
   },
 };
