@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
-import ReactDOM from 'react-dom';
 import { connect, useConnect, styled } from "frontity";
-import Link from "@frontity/components/link";
 
 const ImageGallery = ({ children, ...props }) => {  
   const { state, actions } = useConnect();
@@ -21,15 +19,17 @@ const ImageGallery = ({ children, ...props }) => {
 
   return (
     <>
-      {children.map((element, index) => {
-        let image = element.props.children.props.children.props.src
-        
-        return (
-          <li className="blocks-gallery-item" key={index} onClick={() => showImage(image)}>
-            {element.props.children}
-          </li>
-        )
-      })}
+      <ul className="blocks-gallery-grid">
+        {children.map((element, index) => {
+          let image = element.props.children.props.children.props.src
+          
+          return (
+            <li className="blocks-gallery-item" key={index} onClick={() => showImage(image)}>
+              {element.props.children}
+            </li>
+          )
+        })}
+      </ul>
       {
         lightboxDisplay ? 
         <Lightbox onClick={hideLightBox}>
@@ -57,10 +57,9 @@ const Lightbox = styled.div`
   z-index: 1;
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +67,7 @@ const Lightbox = styled.div`
 
 const LightboxImage = styled.img`
   height: 80vh;
-  max-width: 90vw;
+  max-width: 100%;
   object-fit: contain;
 `;
 
