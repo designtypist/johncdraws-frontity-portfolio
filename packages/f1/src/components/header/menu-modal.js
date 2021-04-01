@@ -8,19 +8,20 @@ const MenuModal = ({ state }) => {
 
   return (
     <>
-      <MenuOverlay />
-      <MenuContent as="nav">
-        {isThereLinks &&
-          menu.map(([name, link]) => (
-            <MenuLink
-              key={name}
-              link={link}
-              aria-current={state.router.link === link ? "page" : undefined}
-            >
-              {name}
-            </MenuLink>
-          ))}
-      </MenuContent>
+      <MenuOverlay>
+        <MenuContent as="nav">
+          {isThereLinks &&
+            menu.map(([name, link]) => (
+              <MenuLink
+                key={name}
+                link={link}
+                aria-current={state.router.link === link ? "page" : undefined}
+              >
+                {name}
+              </MenuLink>
+            ))}
+        </MenuContent>
+      </MenuOverlay>
     </>
   );
 };
@@ -41,6 +42,7 @@ const MenuContent = styled.div`
   display:flex;
   flex-direction: column;
   width: 100%;
+  padding-top: 100px;
 `;
 
 const MenuLink = styled(Link)`
