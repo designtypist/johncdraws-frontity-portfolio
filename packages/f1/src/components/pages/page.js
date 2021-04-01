@@ -106,6 +106,9 @@ const Content = styled.div`
   .wp-block-button__link {
     color:var(--white);
   }
+  .blocks-gallery-item {
+    cursor: pointer;
+  }
   .wp-block-embed {
     max-width: 100%;
     position: relative;
