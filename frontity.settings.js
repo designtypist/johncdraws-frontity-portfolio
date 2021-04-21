@@ -13,9 +13,9 @@ const settings = {
       "state": {
         "theme": {
           "menu": [
-            ["Portfolio", "/portfolio/"],
+            ["Portfolio", "/"],
             ["Personal", "/personal/"],
-            ["About", "/"]
+            ["About", "/about/"]
           ],
           "featured": {
             "showOnList": true,
