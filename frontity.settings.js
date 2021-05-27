@@ -13,7 +13,7 @@ const settings = {
       "state": {
         "theme": {
           "menu": [
-            ["Portfolio", "/portfolio/"],
+            ["Portfolio", "/portfolio"],
             ["Personal", "/personal/"],
             ["About", "/"]
           ],
@@ -30,7 +30,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "api": "https://admin.johncdraws.com/wp-json",
+          "api": "https://wp.johncdraws.com/wp-json",
           "homepage": "/about/",
         }
       }

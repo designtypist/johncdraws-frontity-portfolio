@@ -114,9 +114,9 @@ const globalStyles = css`
     padding-left: 15px;
   }
   .section{
-    padding: 34px 0;
+    padding: 15px 0;
     @media (min-width: 992px) {
-      padding: 50px 0;
+      padding: 25px 0;
     }
   }
 `;
