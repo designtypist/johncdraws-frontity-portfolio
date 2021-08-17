@@ -30,7 +30,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "api": "https://wp.johncdraws.com/wp-json",
+          "api": "https://johncdraws.designtypist.com/wp-json",
           "homepage": "/about/",
         }
       }
